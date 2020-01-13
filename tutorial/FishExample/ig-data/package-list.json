@@ -1,0 +1,15 @@
+{
+  "package-id": "fish",
+  "title": "Fish Implementation Guide",
+  "canonical": "http://example.org/fhir/fish",
+  "introduction": "An example of how FSH can be used to create an IG about fish",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Draft",
+      "path": "http://example.org/fhir/fish",
+      "status": "ci-build",
+      "current": true
+    }
+  ]
+}

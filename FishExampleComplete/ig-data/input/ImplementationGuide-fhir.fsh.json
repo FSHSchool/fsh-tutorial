@@ -1,0 +1,59 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fhir.fish",
+  "url": "http://example.org/fhir/fish",
+  "version": "0.1.0",
+  "name": "Fish Implementation Guide",
+  "title": "Fish Implementation Guide",
+  "status": "draft",
+  "publisher": "American Fish Association",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/afa.com"
+        }
+      ]
+    }
+
+  ],
+  "description": "An example of how FSH can be used to create an IG about fish",
+  "packageId": "fhir.fish",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/FishPatient"
+        },
+        "name": "Fish Patient",
+        "description": "A patient at Aquatic Veterinary Services.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Veterinarian"
+        },
+        "name": "Veterinarian",
+        "description": "A profile on the Practitioner resource for veterinarians. In the US, vets do not have National Provider Numbers.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "mCODE IG",
+          "generation": "markdown"
+        }
+      ]
+    }
+  }
+}

@@ -6,6 +6,7 @@ Parent:         Practitioner
 Id:             veterinarian
 Title:          "Veterinarian"
 Description:    "A profile on the Practitioner resource for veterinarians. In the US, vets do not have National Provider Numbers."
+* name 1..*
 * qualification.code = QUAL#174MM1900N	"Other Service Providers; Veterinarian; Medical Research"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type.coding.code"

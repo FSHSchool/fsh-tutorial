@@ -25,7 +25,7 @@ Description: "The species name of a piscine (fish) patient."
 ValueSet:  FishSpeciesValueSet
 Title: "Fish Species Value Set"
 Description:  "Codes describing various species of fish from SNOMED-CT."
-* codes from system SCT where code is-a SCT#90580008  "Fish (organism)"
+* codes from system SCT where concept is-a #90580008  "Fish (organism)"
 
 Instance: Shorty
 InstanceOf: FishPatient

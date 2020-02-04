@@ -6,7 +6,7 @@ Id:             fish-patient
 Title:          "Fish Patient"
 Description:    "A patient that is a type of fish."
 * name 1..* 
-* ^ publisher = "A patient at Aquatic Veterinary Services."
+* ^publisher = "A patient at Aquatic Veterinary Services."
 // Add species extension
 * extension contains FishSpecies 0..1
 // Remove communication, maritalStatus
@@ -26,3 +26,8 @@ ValueSet:  FishSpeciesValueSet
 Title: "Fish Species Value Set"
 Description:  "Codes describing various species of fish from SNOMED-CT."
 * codes from system SCT where code is-a SCT#90580008  "Fish (organism)"
+
+Instance: Shorty
+InstanceOf: FishPatient
+* name.given = "Shorty"
+* extension[FishSpecies].valueCodeableConcept =  SCT#47978005 "Carpiodes cyprinus (organism)"

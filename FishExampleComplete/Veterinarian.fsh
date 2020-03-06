@@ -11,7 +11,8 @@ Description:    "A profile on the Practitioner resource for veterinarians. In th
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type.coding.code"
 * identifier ^slicing.rules = #open
-* identifier contains LicenseNumber 1..1 MS
-* identifier[LicenseNumber].type = IDTYPE#LN "License number"
-* identifier[LicenseNumber].value MS
+// Make this an inline extension (could also be done as a standalone extension)
+* identifier contains licenseNumber 1..1 MS
+* identifier[licenseNumber].type = IDTYPE#LN "License number"
+* identifier[licenseNumber].value MS
 

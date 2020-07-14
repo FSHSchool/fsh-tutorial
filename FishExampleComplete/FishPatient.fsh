@@ -5,15 +5,14 @@ Parent:         Patient
 Id:             fish-patient
 Title:          "Fish Patient"
 Description:    "A patient that is a type of fish."
-* name 1..* 
-* ^publisher = "A patient at Aquatic Veterinary Services."
+* name 1..*
 // Add species extension
 * extension contains FishSpecies named species 0..1
 // Remove communication, maritalStatus
 * maritalStatus 0..0
 * communication 0..0
 // Make Species and Contact MS
-* extension[FishSpecies], contact MS
+* extension[FishSpecies] and contact MS
 
 Extension:  FishSpecies
 Id: fish-species

@@ -1,2 +1,10 @@
-FishExample/build/**
-FishExampleComplete/build/**
+/FishExample/fsh-generated
+/FishExample/input-cache
+/FishExample/output
+/FishExample/temp
+/FishExample/template
+/FishExampleComplete/fsh-generated
+/FishExampleComplete/input-cache
+/FishExampleComplete/output
+/FishExampleComplete/temp
+/FishExampleComplete/template

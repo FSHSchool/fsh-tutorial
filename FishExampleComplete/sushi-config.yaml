@@ -33,4 +33,4 @@ menu:
   Table of Contents: toc.html
   Artifacts Summary: artifacts.html
   Other Resources:
-    "FHIR Spec ": new-tab external {{site.data.fhir.path}}index.html
+    "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
